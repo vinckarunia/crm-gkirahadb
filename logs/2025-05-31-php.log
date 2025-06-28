@@ -1,0 +1,22 @@
+[31-May-2025 09:44:22 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string + int in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonCustomFieldsRowOps.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonCustomFieldsRowOps.php on line 58
+[31-May-2025 09:44:25 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Can't DROP 'c3'; check that column/key exists in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonCustomFieldsRowOps.php(47): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[31-May-2025 09:44:33 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Can't DROP 'c3'; check that column/key exists in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonCustomFieldsRowOps.php(47): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[31-May-2025 09:44:39 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Can't DROP 'c3'; check that column/key exists in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonCustomFieldsRowOps.php(47): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175

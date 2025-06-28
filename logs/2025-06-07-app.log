@@ -1,0 +1,2 @@
+[2025-06-07T05:57:42.214021+00:00] defaultLogger.WARNING: Encountered invalid configuration(s) for sInactiveClassification, please fix this [] {"url":"/churchcrm/OptionManager.php?mode=grptypes","remote_ip":"140.213.35.61","correlation_id":"6843d4d63440b"}
+[2025-06-07T15:04:29.660625+00:00] defaultLogger.WARNING: Encountered invalid configuration(s) for sInactiveClassification, please fix this [] {"url":"/churchcrm/OptionManager.php?mode=classes","remote_ip":"103.136.58.90","correlation_id":"684454fda1495"}

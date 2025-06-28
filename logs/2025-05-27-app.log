@@ -1,0 +1,2 @@
+[2025-05-27T03:11:11.082132+00:00] defaultLogger.INFO: Starting application integrity check [] {"url":"/churchcrm/api/background/timerjobs","remote_ip":"103.136.58.90","correlation_id":"68352d4f140d7"}
+[2025-05-27T03:11:11.236437+00:00] defaultLogger.INFO: Application integrity check passed [] {"url":"/churchcrm/api/background/timerjobs","remote_ip":"103.136.58.90","correlation_id":"68352d4f140d7"}
