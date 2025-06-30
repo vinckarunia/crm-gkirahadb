@@ -1,0 +1,42 @@
+# === PHP & Composer ===
+vendor/
+composer.lock
+
+# === Environment / Konfigurasi Lokal ===
+Include/Config.php
+.env
+.env.*
+
+# === Cache / Session / Logs ===
+*.log
+*.cache
+/tmp/
+cache/
+logs/
+session/
+
+# === Uploads / Media (opsional) ===
+Images/Person/**
+Images/Family/**
+Images/Group/**
+Images/DepositSlip/**
+Images/CheckImages/**
+Images/UserAvatars/**
+
+# === IDE / Editor ===
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Database Dump Lokal ===
+*.sql
+*.sql.gz
+*.bak
+
+# === Nginx / Apache local config (opsional) ===
+*.conf
