@@ -574,37 +574,41 @@ class Person extends BasePerson implements PhotoInterface
     /**
      * @return string[]
      */
-    public function getCustomFields($allPersonCustomFields, array $customMapping, array &$CustomList, $name_func): array
+    public function getCustomFields($allPersonCustomFields, array $customMapping, array &$CustomList, $name_func): string
     {
-        // add custom fields to person_custom table since they are not defined in the propel schema
         $rawQry = PersonCustomQuery::create();
         foreach ($allPersonCustomFields as $customfield) {
             if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($customfield->getFieldSecurity())) {
                 $rawQry->withColumn($customfield->getId());
             }
         }
+
         $thisPersonCustomFields = $rawQry->findOneByPerId($this->getId());
 
-        // get custom column names and values
         $personCustom = [];
         if ($thisPersonCustomFields) {
-            //Lets use the map created instead of querying the column name
             foreach ($thisPersonCustomFields->getVirtualColumns() as $column => $value) {
                 if (!empty($value)) {
-                    $temp = $customMapping[$column]['Name'];
-                    $personCustom[] = $temp;
-                    $CustomList[$temp] += 1;
+                    $fieldName = $customMapping[$column]['Name'];
+                    $CustomList[$fieldName] += 1;
 
                     if (array_key_exists($value, $customMapping[$column]['Elements'])) {
-                        $temp = $name_func($customMapping[$column]['Name'], $customMapping[$column]['Elements'][$value]);
-                        $personCustom[] = $temp;
-                        $CustomList[$temp] += 1;
+                    $resolvedValue = $name_func($fieldName, $customMapping[$column]['Elements'][$value]);
+
+                    $cleanedValue = preg_replace('/^' . preg_quote($fieldName, '/') . ':\s*/i', '', $resolvedValue);
+
+                        $display = '<strong>' . trim($fieldName) . ': </strong>' . trim($cleanedValue);
+                    } else {
+                        $display = '<strong>' . trim($fieldName) . ': </strong>' . trim($value);
                     }
+
+                $personCustom[] = $display;
+                $CustomList[$display] += 1;
                 }
             }
         }
 
-        return $personCustom;
+        return implode('<br>', $personCustom);
     }
 
     // return array of person groups

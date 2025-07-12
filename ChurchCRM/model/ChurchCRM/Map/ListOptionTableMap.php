@@ -184,7 +184,7 @@ class ListOptionTableMap extends TableMap
         $this->addPrimaryKey('lst_ID', 'Id', 'SMALLINT', true, 8, 0);
         $this->addPrimaryKey('lst_OptionID', 'OptionId', 'SMALLINT', true, 8, 0);
         $this->addColumn('lst_OptionSequence', 'OptionSequence', 'TINYINT', true, 3, 0);
-        $this->addColumn('lst_OptionName', 'OptionName', 'VARCHAR', true, 50, '');
+        $this->addColumn('lst_OptionName', 'OptionName', 'VARCHAR', true, 100, '');
     } // initialize()
 
     /**

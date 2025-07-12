@@ -5,6 +5,12 @@ _Berdasarkan ChurchCRM v5.17.0_
 ---
 
 # CHANGELOG
+## 🔖 v0.2.1 – 12 Juli 2025
+
+### 🗺️ Tampilan Dashboard
+- Menambahkan keterangan **Wilayah** pada detail ulang tahun setiap jemaat.
+
+---
 
 ## 🔖 v0.2 – 4 Juli 2025
 

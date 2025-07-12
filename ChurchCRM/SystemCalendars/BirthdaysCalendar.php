@@ -41,11 +41,39 @@ class BirthdaysCalendar implements SystemCalendar
 
     public function getEvents(string $start, string $end): ObjectCollection
     {
+        $startDate = new \DateTime($start);
+        $endDate = new \DateTime($end);
+
         $people = PersonQuery::create()
             ->filterByBirthDay('', Criteria::NOT_EQUAL)
             ->find();
 
-        return $this->peopleCollectionToEvents($people);
+        $events = new ObjectCollection();
+        $events->setModel(Event::class);
+
+        foreach ($people as $person) {
+            $month = str_pad($person->getBirthMonth(), 2, '0', STR_PAD_LEFT);
+            $day = str_pad($person->getBirthDay(), 2, '0', STR_PAD_LEFT);
+
+            for ($year = (int) $startDate->format('Y'); $year <= (int) $endDate->format('Y'); $year++) {
+                $eventDate = "$year-$month-$day";
+                
+                $eventDateObj = new \DateTime($eventDate);
+                if ($eventDateObj >= $startDate && $eventDateObj <= $endDate) {
+                    $event = new Event();
+                    $event->setId($person->getId());
+                    $event->setEditable(false);
+                    $event->setStart($eventDate);
+                    $age = $person->getAge($eventDate);
+                    $event->setTitle($person->getFullName() . ($age ? " ($age)" : ''));
+                    $event->setURL($person->getViewURI());
+
+                    $events->push($event);
+                }
+            }
+        }
+
+        return $events;
     }
 
     public function getEventById(int $Id): ObjectCollection

@@ -1,0 +1,26 @@
+[2025-07-05T02:37:01.231155+00:00] defaultLogger.WARNING: Encountered invalid configuration(s) for sInactiveClassification, please fix this [] {"url":"/OptionManager.php?mode=classes","remote_ip":"127.0.0.1","correlation_id":"68688fcd38702"}
+[2025-07-05T07:40:30.023892+00:00] defaultLogger.WARNING: Encountered invalid configuration(s) for sInactiveClassification, please fix this [] {"url":"/OptionManager.php?mode=classes","remote_ip":"127.0.0.1","correlation_id":"6868d6ee05d65"}
+[2025-07-05T07:40:33.873135+00:00] defaultLogger.WARNING: Encountered invalid configuration(s) for sInactiveClassification, please fix this [] {"url":"/OptionManagerRowOps.php?mode=classes&Order=2&ListID=1&ID=2&Action=Inactive","remote_ip":"127.0.0.1","correlation_id":"6868d6f1d52b8"}
+[2025-07-05T07:41:16.197079+00:00] defaultLogger.INFO: People DB Clear started  [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.221573+00:00] defaultLogger.INFO: Family custom deleted  [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.295877+00:00] defaultLogger.INFO: Families deleted [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.299908+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Family/*.png [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.308758+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Family/*.jpeg [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.309103+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Family/*.jpg [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.309327+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Family/thumbnails/*.png [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.314817+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Family/thumbnails/*.jpeg [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.315028+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Family/thumbnails/*.jpg [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.315118+00:00] defaultLogger.INFO: family photos deleted [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.348546+00:00] defaultLogger.INFO: Person Group Roles deleted [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.453542+00:00] defaultLogger.INFO: Person Custom deleted [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.473832+00:00] defaultLogger.INFO: Person Volunteer deleted [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.475844+00:00] defaultLogger.INFO: Users aide from person logged in deleted [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.601951+00:00] defaultLogger.INFO: Persons aide from person logged in deleted [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:19.602120+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Person/*.png [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:20.101161+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Person/*.jpeg [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:20.101450+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Person/*.jpg [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:20.101559+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Person/thumbnails/*.png [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:20.101624+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Person/thumbnails/*.jpeg [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:20.101668+00:00] defaultLogger.INFO: Deleting files: /home/vinc/crm-gkirahadb/Images/Person/thumbnails/*.jpg [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:20.101707+00:00] defaultLogger.INFO: people photos deleted [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}
+[2025-07-05T07:41:20.242870+00:00] defaultLogger.INFO: Notes deleted [] {"url":"/api/database/people/clear","remote_ip":"127.0.0.1","correlation_id":"6868d71c301df"}

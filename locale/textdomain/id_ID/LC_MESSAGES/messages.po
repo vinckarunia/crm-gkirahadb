@@ -1831,7 +1831,7 @@ msgstr "Aktifkan Properti Spesifik Grup"
 
 #: 
 msgid "Group Roles"
-msgstr "Peran Kelompok"
+msgstr "Peran dalam Kelompok"
 
 #: 
 msgid "Group role name changes are saved as soon as the box loses focus"
@@ -2171,7 +2171,7 @@ msgstr "Email Semua (BCC)"
 
 #: 
 msgid "Family Roles"
-msgstr "Peran Keluarga"
+msgstr "Peran dalam Keluarga"
 
 #: 
 msgid "Family Geographic"
@@ -9204,3 +9204,74 @@ msgstr "Kolom Senarai Orang"
 msgid "Family List Columns"
 msgstr "Kolom Senarai Keluarga"
 
+#:
+msgid "Member Number"
+msgstr "Nomor Anggota"
+
+#:
+msgid "Date of Death"
+msgstr "Tanggal Meninggal"
+
+#:
+msgid "DKH Date"
+msgstr "Tanggal DKH"
+
+#:
+msgid "Ex. DKH Date"
+msgstr "Tanggal Ex. DKH"
+
+#:
+msgid "Ex. DKH-4 Date"
+msgstr "Tanggal Ex. DKH-4"
+
+#:
+msgid "Reason for Mutation-1"
+msgstr "Alasan-1 Mutasi"
+
+#:
+msgid "Reason for Mutation-2"
+msgstr "Alasan-2 Mutasi"
+
+#:
+msgid "Reason for Mutation-3"
+msgstr "Alasan-3 Mutasi"
+
+#:
+msgid "Region"
+msgstr "Wilayah"
+
+#:
+msgid "Blood Type"
+msgstr "Gol. Darah"
+
+#:
+msgid "Membership Status"
+msgstr "Status Keanggotaan"
+
+#:
+msgid "Education"
+msgstr "Pendidikan"
+
+#:
+msgid "Occupation"
+msgstr "Pekerjaan"
+
+#:
+msgid "Ethnicity"
+msgstr "Etnis"
+
+#:
+msgid "Baptism Date"
+msgstr "Tanggal Baptis"
+
+#:
+msgid "Confirmation Date"
+msgstr "Tanggal Sidi"
+
+#:
+msgid "Transfer In Date"
+msgstr "Tgl. Atestasi Masuk"
+
+#:
+msgid "Transfer Out Date"
+msgstr "Tgl. Atestasi Keluar"

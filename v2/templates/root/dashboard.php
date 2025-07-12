@@ -115,14 +115,131 @@ include SystemURLs::getDocumentRoot() . '/Include/Header.php';
 <div class="row">
     <div class="card col-md-6">
         <div class="card-body">
-            <h3><?= gettext("Today's Birthdays") ?></h3>
-            <table class="table table-striped" width="100%" id="PersonBirthdayDashboardItem"></table>
+            <h3><?= gettext("This Week's Birthdays") ?></h3>
+            <table class="table table-striped" width="100%">
+            <thead>
+                <tr>
+                    <th><?= gettext("Date") ?></th>
+                    <th><?= gettext("Count") ?></th>
+                    <th><?= gettext("Details") ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $birthdaysThisWeek = \ChurchCRM\Dashboard\EventsMenuItems::getDashboardItemValue()['Birthdays This Week'];
+                $index = 0;
+                foreach ($birthdaysThisWeek as $date => $data): 
+                    $collapseId = 'thisweek_collapse_' . $index;
+                ?>
+                <tr>
+                    <td><?= date('l, d M Y', strtotime($date)) ?></td>
+                    <td><?= $data['count'] ?></td>
+                    <td>
+                        <?php if ($data['count'] > 0): ?>
+                            <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#<?= $collapseId ?>">
+                                <?= gettext('Details') ?>
+                            </button>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+
+                <?php if ($data['count'] > 0): ?>
+                <tr>
+                    <td colspan="3" style="padding: 0; border: none;">
+                        <div id="<?= $collapseId ?>" class="collapse">
+                            <table class="table table-striped mb-0">
+                                <thead>
+                                    <tr>
+                                        <th><?= gettext('Name') ?></th>
+                                        <th><?= gettext('Region') ?></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($data['people'] as $person): ?>
+                                        <tr>
+                                            <td>
+                                                <a href="/PersonView.php?PersonID=<?= $person['Id'] ?>">
+                                                    <?= $person['FirstName'] . ' ' . $person['MiddleName'] . ' ' . $person['LastName'] ?>
+                                                </a>
+                                            </td>
+                                            <td> <?= $person['Region'] ?? 'Unknown' ?> </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <?php endif; ?>
+
+                <?php $index++; endforeach; ?>
+            </tbody>
+            </table>
         </div>
     </div>
     <div class="card col-md-6">
         <div class="card-body">
-            <h3><?= gettext("Today's Wedding Anniversaries") ?></h3>
-            <table class="table table-striped" width="100%" id="FamiliesWithAnniversariesDashboardItem"></table>
+            <h3><?= gettext("Next Week's Birthdays") ?></h3>
+            <table class="table table-striped" width="100%">
+            <thead>
+                <tr>
+                    <th><?= gettext("Date") ?></th>
+                    <th><?= gettext("Count") ?></th>
+                    <th><?= gettext("Details") ?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $birthdaysNextWeek = \ChurchCRM\Dashboard\EventsMenuItems::getDashboardItemValue()['Birthdays Next Week'];
+                $index = 0;
+                foreach ($birthdaysNextWeek as $date => $data): 
+                    $collapseId = 'nextweek_collapse_' . $index;
+                ?>
+                <!-- Baris utama -->
+                <tr>
+                    <td><?= date('l, d M Y', strtotime($date)) ?></td>
+                    <td><?= $data['count'] ?></td>
+                    <td>
+                        <?php if ($data['count'] > 0): ?>
+                            <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#<?= $collapseId ?>">
+                                <?= gettext('Details') ?>
+                            </button>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+
+                <?php if ($data['count'] > 0): ?>
+                <tr>
+                    <td colspan="3" style="padding: 0; border: none;">
+                        <div id="<?= $collapseId ?>" class="collapse">
+                            <table class="table table-striped mb-0">
+                                <thead>
+                                    <tr>
+                                        <th><?= gettext('Name') ?></th>
+                                        <th><?= gettext('Region') ?></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($data['people'] as $person): ?>
+                                        <tr>
+                                            <td>
+                                                <a href="/PersonView.php?PersonID=<?= $person['Id'] ?>">
+                                                    <?= $person['FirstName'] . ' ' . $person['MiddleName'] . ' ' . $person['LastName'] ?>
+                                                </a>
+                                            </td>
+                                            <td> <?= $person['Region'] ?? 'Unknown' ?> </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <?php endif; ?>
+
+                <?php $index++; endforeach; ?>
+            </tbody>
+            </table>
         </div>
     </div>
 </div>

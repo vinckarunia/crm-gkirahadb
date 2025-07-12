@@ -1,42 +1,51 @@
-# === PHP & Composer ===
-vendor/
-composer.lock
-
-# === Environment / Konfigurasi Lokal ===
-Include/Config.php
-.env
-.env.*
-
-# === Cache / Session / Logs ===
-*.log
-*.cache
-/tmp/
-cache/
-logs/
-session/
-
-# === Uploads / Media (opsional) ===
-Images/Person/**
-Images/Family/**
-Images/Group/**
-Images/DepositSlip/**
-Images/CheckImages/**
-Images/UserAvatars/**
-
-# === IDE / Editor ===
+## Directory-based project format:
 .vscode/
 .idea/
-*.sublime-project
-*.sublime-workspace
 
-# === OS Files ===
+#Exclude composer vendor folders
+vendor
+node_modules
+BuildConfig.json
+security-checker.phar
+
+# Uploaded Images
+src/Images/Family
+src/Images/Person
+
+# SASS
+.sass-cache
+
+#skins
+src/skin/external
+src/skin/adminlte
+src/skin/churchcrm.min.css.map
+src/skin/churchcrm.min.css
+
+#locale files
+src/locale/datatables
+src/locale/js
+
+# Configuration files with passwords
+src/Include/Config.php
+
+target
+temp_attach
+src/ChurchCRM/model/ChurchCRM/Base
+src/ChurchCRM/model/ChurchCRM/Map
+src/signatures.json
+src/integrityCheck.json
+src/tmp_attach
+src/logs/*.log
+
+error.log
+
+nbproject/*
+/src/skin/js-react/
 .DS_Store
-Thumbs.db
 
-# === Database Dump Lokal ===
-*.sql
-*.sql.gz
-*.bak
+src/Upgrade/*
 
-# === Nginx / Apache local config (opsional) ===
-*.conf
+cypress/screenshots
+cypress/videos
+cypress/downloads
+cypress.config.ts

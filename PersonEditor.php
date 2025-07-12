@@ -625,7 +625,52 @@ require_once 'Include/Header.php';
         <div class="card-body">
             <div class="form-group">
                 <div class="row">
+                    <div class="col-md-1">
+                        <label for="Title"><?= gettext('Title') ?>:</label>
+                        <input type="text" name="Title" id="Title"
+                               value="<?= htmlentities(stripslashes($sTitle), ENT_NOQUOTES, 'UTF-8') ?>"
+                               class="form-control" placeholder="<?= gettext('Dr., Ir., ..') ?>">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="FirstName"><?= gettext('First Name') ?>:</label>
+                        <input type="text" name="FirstName" id="FirstName"
+                               value="<?= htmlentities(stripslashes($sFirstName), ENT_NOQUOTES, 'UTF-8') ?>"
+                               class="form-control">
+                        <?php if ($sFirstNameError) {
+                            ?><br><span style="color: red;"><?php echo $sFirstNameError ?></span><?php
+                        } ?>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="MiddleName"><?= gettext('Middle Name') ?>:</label>
+                        <input type="text" name="MiddleName" id="MiddleName"
+                               value="<?= htmlentities(stripslashes($sMiddleName), ENT_NOQUOTES, 'UTF-8') ?>"
+                               class="form-control">
+                        <?php if ($sMiddleNameError) {
+                            ?><br><span style="color: red;"><?php echo $sMiddleNameError ?></span><?php
+                        } ?>
+                    </div>
+
+                    <div class="col-md-3">
+                        <label for="LastName"><?= gettext('Last Name') ?>:</label>
+                        <input type="text" name="LastName" id="LastName"
+                               value="<?= htmlentities(stripslashes($sLastName), ENT_NOQUOTES, 'UTF-8') ?>"
+                               class="form-control">
+                        <?php if ($sLastNameError) {
+                            ?><br><span style="color: red;"><?php echo $sLastNameError ?></span><?php
+                        } ?>
+                    </div>
+
                     <div class="col-md-2">
+                        <label for="Suffix"><?= gettext('Suffix') ?>:</label>
+                        <input type="text" name="Suffix" id="Suffix"
+                               value="<?= htmlentities(stripslashes($sSuffix), ENT_NOQUOTES, 'UTF-8') ?>"
+                               placeholder="<?= gettext('SE, S.Si, MA, M.Kom, ...') ?>" class="form-control">
+                    </div>
+                </div>
+                <p />
+                <div class="row">
+                    <div class="col-md-3">
                         <label><?= gettext('Gender') ?>:</label>
                         <select id="Gender" name="Gender" class="form-control">
                             <option value="0"><?= gettext('Select Gender') ?></option>
@@ -638,54 +683,6 @@ require_once 'Include/Header.php';
                                               } ?>><?= gettext('Female') ?></option>
                         </select>
                     </div>
-                    <div class="col-md-3">
-                        <label for="Title"><?= gettext('Title') ?>:</label>
-                        <input type="text" name="Title" id="Title"
-                               value="<?= htmlentities(stripslashes($sTitle), ENT_NOQUOTES, 'UTF-8') ?>"
-                               class="form-control" placeholder="<?= gettext('Mr., Mrs., Dr., Rev.') ?>">
-                    </div>
-                </div>
-                <p />
-                <div class="row">
-                    <div class="col-md-4">
-                        <label for="FirstName"><?= gettext('First Name') ?>:</label>
-                        <input type="text" name="FirstName" id="FirstName"
-                               value="<?= htmlentities(stripslashes($sFirstName), ENT_NOQUOTES, 'UTF-8') ?>"
-                               class="form-control">
-                        <?php if ($sFirstNameError) {
-                            ?><br><span style="color: red;"><?php echo $sFirstNameError ?></span><?php
-                        } ?>
-                    </div>
-
-                    <div class="col-md-2">
-                        <label for="MiddleName"><?= gettext('Middle Name') ?>:</label>
-                        <input type="text" name="MiddleName" id="MiddleName"
-                               value="<?= htmlentities(stripslashes($sMiddleName), ENT_NOQUOTES, 'UTF-8') ?>"
-                               class="form-control">
-                        <?php if ($sMiddleNameError) {
-                            ?><br><span style="color: red;"><?php echo $sMiddleNameError ?></span><?php
-                        } ?>
-                    </div>
-
-                    <div class="col-md-4">
-                        <label for="LastName"><?= gettext('Last Name') ?>:</label>
-                        <input type="text" name="LastName" id="LastName"
-                               value="<?= htmlentities(stripslashes($sLastName), ENT_NOQUOTES, 'UTF-8') ?>"
-                               class="form-control">
-                        <?php if ($sLastNameError) {
-                            ?><br><span style="color: red;"><?php echo $sLastNameError ?></span><?php
-                        } ?>
-                    </div>
-
-                    <div class="col-md-1">
-                        <label for="Suffix"><?= gettext('Suffix') ?>:</label>
-                        <input type="text" name="Suffix" id="Suffix"
-                               value="<?= htmlentities(stripslashes($sSuffix), ENT_NOQUOTES, 'UTF-8') ?>"
-                               placeholder="<?= gettext('Jr., Sr., III') ?>" class="form-control">
-                    </div>
-                </div>
-                <p />
-                <div class="row">
                     <div class="col-md-2">
                         <label for="BirthMonth"><?= gettext('Birth Month') ?>:</label>
                         <select id="BirthMonth" name="BirthMonth" class="form-control">
@@ -746,7 +743,7 @@ require_once 'Include/Header.php';
                             } ?>
                         </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label for="BirthYear"><?= gettext('Birth Year') ?>:</label>
                         <input type="text" id="BirthYear" name="BirthYear" value="<?php echo $iBirthYear ?>"
                                maxlength="4" size="5"
@@ -759,57 +756,196 @@ require_once 'Include/Header.php';
                             ?><span style="color: red;"><?php echo $sBirthDateError ?></span><?php
                         } ?>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-1">
                         <label><?= gettext('Hide Age') ?></label><br />
                         <input type="checkbox" name="HideAge" value="1" <?php if ($bHideAge) {
                             echo ' checked';
                                                                         } ?> />
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="card card-info clearfix">
-        <div class="card-header">
-            <h3 class="card-title"><?= gettext('Family Info') ?></h3>
-            <div class="card-tools">
-                <input type="submit" class="btn btn-primary" value="<?= gettext('Save') ?>" name="PersonSubmit">
-            </div>
-        </div><!-- /.box-header -->
-        <div class="card-body">
-            <div class="form-group col-md-3">
-                <label><?= gettext('Family Role') ?>:</label>
-                <select name="FamilyRole" class="form-control">
-                    <option value="0"><?= gettext('Unassigned') ?></option>
-                    <option value="" disabled>-----------------------</option>
-                    <?php while ($aRow = mysqli_fetch_array($rsFamilyRoles)) {
-                        extract($aRow);
-                        echo '<option value="' . $lst_OptionID . '"';
-                        if ($iFamilyRole == $lst_OptionID) {
-                            echo ' selected';
-                        }
-                        echo '>' . $lst_OptionName . '&nbsp;';
-                    } ?>
-                </select>
-            </div>
+                <p />
+                <div class="row">
+                    <?php
+                    $customFieldKey = 'c18';
 
-            <div class="form-group col-md-6">
-                <label for="familyId"><?= gettext('Family'); ?>:</label>
-                <select name="Family" id="familyId" class="form-control">
-                    <option value="0" selected><?= gettext('Unassigned') ?></option>
-                    <option value="-1"><?= gettext('Create a new family (using last name)') ?></option>
-                    <option value="" disabled>-----------------------</option>
-                    <?php while ($aRow = mysqli_fetch_array($rsFamilies)) {
-                        extract($aRow);
-                        $fam_ID = (int)$fam_ID;
+                    if ($numCustomFields > 0) {
+                        mysqli_data_seek($rsCustomFields, 0);
 
-                        echo '<option value="' . $fam_ID . '"';
-                        if ($iFamily === $fam_ID || $queryParamFamilyId === $fam_ID) {
-                            echo ' selected';
+                        while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                            if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                                extract($rowCustomField);
+
+                                if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                    ?>
+                                    <div class="form-group col-md-3">
+                                        <label><?= gettext('Blood Type') ?></label>
+                                        <?php
+                                        if (array_key_exists($custom_Field, $aCustomData)) {
+                                            $currentFieldData = trim($aCustomData[$custom_Field]);
+                                        } else {
+                                            $currentFieldData = '';
+                                        }
+
+                                        if ($type_ID == 11) {
+                                            $custom_Special = $sPhoneCountry;
+                                        }
+
+                                        formCustomField(
+                                            $type_ID,
+                                            $custom_Field,
+                                            $currentFieldData,
+                                            $custom_Special ?? null,
+                                            !isset($_POST['PersonSubmit'])
+                                        );
+
+                                        if (isset($aCustomErrors[$custom_Field])) {
+                                            echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                        }
+                                        ?>
+                                    </div>
+                                    <?php
+                                }
+                                break;
+                            }
                         }
-                        echo '>' . $fam_Name . '&nbsp;' . FormatAddressLine($fam_Address1, $fam_City, $fam_State);
-                    } ?>
-                </select>
+                    }
+                    ?>
+                    <?php
+                    $customFieldKey = 'c5';
+
+                    if ($numCustomFields > 0) {
+                        mysqli_data_seek($rsCustomFields, 0);
+
+                        while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                            if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                                extract($rowCustomField);
+
+                                if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                    ?>
+                                    <div class="form-group col-md-3">
+                                        <label><?= gettext('Ethnicity') ?></label>
+                                        <?php
+                                        if (array_key_exists($custom_Field, $aCustomData)) {
+                                            $currentFieldData = trim($aCustomData[$custom_Field]);
+                                        } else {
+                                            $currentFieldData = '';
+                                        }
+
+                                        if ($type_ID == 11) {
+                                            $custom_Special = $sPhoneCountry;
+                                        }
+
+                                        formCustomField(
+                                            $type_ID,
+                                            $custom_Field,
+                                            $currentFieldData,
+                                            $custom_Special ?? null,
+                                            !isset($_POST['PersonSubmit'])
+                                        );
+
+                                        if (isset($aCustomErrors[$custom_Field])) {
+                                            echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                        }
+                                        ?>
+                                    </div>
+                                    <?php
+                                }
+                                break; 
+                            }
+                        }
+                    }
+                    ?>
+                    <?php
+                    $customFieldKey = 'c3';
+
+                    if ($numCustomFields > 0) {
+                        mysqli_data_seek($rsCustomFields, 0);
+
+                        while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                            if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                                extract($rowCustomField);
+
+                                if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                    ?>
+                                    <div class="form-group col-md-3">
+                                        <label><?= gettext('Education') ?></label>
+                                        <?php
+                                        if (array_key_exists($custom_Field, $aCustomData)) {
+                                            $currentFieldData = trim($aCustomData[$custom_Field]);
+                                        } else {
+                                            $currentFieldData = '';
+                                        }
+
+                                        if ($type_ID == 11) {
+                                            $custom_Special = $sPhoneCountry;
+                                        }
+
+                                        formCustomField(
+                                            $type_ID,
+                                            $custom_Field,
+                                            $currentFieldData,
+                                            $custom_Special ?? null,
+                                            !isset($_POST['PersonSubmit'])
+                                        );
+
+                                        if (isset($aCustomErrors[$custom_Field])) {
+                                            echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                        }
+                                        ?>
+                                    </div>
+                                    <?php
+                                }
+                                break;
+                            }
+                        }
+                    }
+                    ?>
+                    <?php
+                    $customFieldKey = 'c4';
+
+                    if ($numCustomFields > 0) {
+                        mysqli_data_seek($rsCustomFields, 0);
+
+                        while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                            if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                                extract($rowCustomField);
+
+                                if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                    ?>
+                                    <div class="form-group col-md-3">
+                                        <label><?= gettext('Occupation') ?></label>
+                                        <?php
+                                        if (array_key_exists($custom_Field, $aCustomData)) {
+                                            $currentFieldData = trim($aCustomData[$custom_Field]);
+                                        } else {
+                                            $currentFieldData = '';
+                                        }
+
+                                        if ($type_ID == 11) {
+                                            $custom_Special = $sPhoneCountry;
+                                        }
+
+                                        formCustomField(
+                                            $type_ID,
+                                            $custom_Field,
+                                            $currentFieldData,
+                                            $custom_Special ?? null,
+                                            !isset($_POST['PersonSubmit'])
+                                        );
+
+                                        if (isset($aCustomErrors[$custom_Field])) {
+                                            echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                        }
+                                        ?>
+                                    </div>
+                                    <?php
+                                }
+                                break;
+                            }
+                        }
+                    }
+                    ?>
+                </div>
             </div>
         </div>
     </div>
@@ -823,55 +959,57 @@ require_once 'Include/Header.php';
         <div class="card-body">
             <?php if (!SystemConfig::getValue('bHidePersonAddress')) { /* Person Address can be hidden - General Settings */ ?>
                 <div class="row">
-                    <div class="form-group">
-                        <div class="col-md-6">
-                            <label>
-                                <?php if ($bFamilyAddress1) {
-                                    echo '<span style="color: red;">';
-                                }
+                    <div class="col-12">
+                        <label>
+                            <?php if ($bFamilyAddress1) {
+                                echo '<span style="color: red;">';
+                            }
 
-                                echo gettext('Address') . ' 1:';
+                            echo gettext('Address') . ' 1:';
 
-                                if ($bFamilyAddress1) {
-                                    echo '</span>';
-                                } ?>
-                            </label>
-                            <input type="text" name="Address1"
-                                   value="<?= htmlentities(stripslashes($sAddress1), ENT_NOQUOTES, 'UTF-8') ?>"
-                                   size="30" maxlength="50" class="form-control">
-                        </div>
-                        <div class="col-md-3">
-                            <label>
-                                <?php if ($bFamilyAddress2) {
-                                    echo '<span style="color: red;">';
-                                }
+                            if ($bFamilyAddress1) {
+                                echo '</span>';
+                            } ?>
+                        </label>
+                        <input type="text" name="Address1"
+                               value="<?= htmlentities(stripslashes($sAddress1), ENT_NOQUOTES, 'UTF-8') ?>"
+                                size="30" maxlength="50" class="form-control">
+                    </div>
+                </div>
+                <p />
+                <div class="row">
+                    <div class="col-12">
+                        <label>
+                            <?php if ($bFamilyAddress2) {
+                                echo '<span style="color: red;">';
+                            }
 
-                                echo gettext('Address') . ' 2:';
+                            echo gettext('Address') . ' 2:';
 
-                                if ($bFamilyAddress2) {
-                                    echo '</span>';
-                                } ?>
-                            </label>
-                            <input type="text" name="Address2"
-                                   value="<?= htmlentities(stripslashes($sAddress2), ENT_NOQUOTES, 'UTF-8') ?>"
-                                   size="30" maxlength="50" class="form-control">
-                        </div>
-                        <div class="col-md-3">
-                            <label>
-                                <?php if ($bFamilyCity) {
-                                    echo '<span style="color: red;">';
-                                }
+                            if ($bFamilyAddress2) {
+                                echo '</span>';
+                            } ?>
+                        </label>
+                        <input type="text" name="Address2"
+                               value="<?= htmlentities(stripslashes($sAddress2), ENT_NOQUOTES, 'UTF-8') ?>"
+                                size="30" maxlength="50" class="form-control">
+                    </div>
+                </div>
+                    <!-- <div class="col-md-3">
+                        <label>
+                            <?php if ($bFamilyCity) {
+                                echo '<span style="color: red;">';
+                            }
 
-                                echo gettext('City') . ':';
+                            echo gettext('City') . ':';
 
-                                if ($bFamilyCity) {
-                                    echo '</span>';
-                                } ?>
-                            </label>
-                            <input type="text" name="City"
-                                   value="<?= htmlentities(stripslashes($sCity), ENT_NOQUOTES, 'UTF-8') ?>"
-                                   class="form-control">
-                        </div>
+                            if ($bFamilyCity) {
+                                echo '</span>';
+                            } ?>
+                        </label>
+                        <input type="text" name="City"
+                               value="<?= htmlentities(stripslashes($sCity), ENT_NOQUOTES, 'UTF-8') ?>"
+                               class="form-control">
                     </div>
                 </div>
                 <p />
@@ -953,9 +1091,10 @@ require_once 'Include/Header.php';
                 <input type="hidden" name="Country"
                        value="<?= htmlentities(stripslashes($sCountry), ENT_NOQUOTES, 'UTF-8') ?>"></input>
                 <?php
-            } ?>
+            } ?> -->
+            <p />
             <div class="row">
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-6">
                     <label for="HomePhone">
                         <?php
                         if ($bFamilyHomePhone) {
@@ -971,15 +1110,15 @@ require_once 'Include/Header.php';
                         </div>
                         <input type="text" name="HomePhone"
                                value="<?= htmlentities(stripslashes($sHomePhone), ENT_NOQUOTES, 'UTF-8') ?>" size="30"
-                               maxlength="30" class="form-control"
-                               data-inputmask='"mask": "<?= SystemConfig::getValue('sPhoneFormat') ?>"' data-mask>
-                        <br><input type="checkbox" name="NoFormat_HomePhone"
+                               maxlength="30" class="form-control">
+                               <!-- data-inputmask='"mask": "<?= SystemConfig::getValue('sPhoneFormat') ?>"' data-mask> -->
+                        <!-- <br><input type="checkbox" name="NoFormat_HomePhone"
                                    value="1" <?php if ($bNoFormat_HomePhone) {
                                         echo ' checked';
-                                             } ?>><?= gettext('Do not auto-format') ?>
+                                             } ?>><?= gettext('Do not auto-format') ?> -->
                     </div>
                 </div>
-                <div class="form-group col-md-3">
+                <!-- <div class="form-group col-md-4">
                     <label for="WorkPhone">
                         <?php
                         if ($bFamilyWorkPhone) {
@@ -1003,9 +1142,9 @@ require_once 'Include/Header.php';
                                         echo ' checked';
                                              } ?>><?= gettext('Do not auto-format') ?>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-6">
                     <label for="CellPhone">
                         <?php
                         if ($bFamilyCellPhone) {
@@ -1021,16 +1160,64 @@ require_once 'Include/Header.php';
                         </div>
                         <input type="text" name="CellPhone"
                                value="<?= htmlentities(stripslashes($sCellPhone), ENT_NOQUOTES, 'UTF-8') ?>" size="30"
-                               maxlength="30" class="form-control"
-                               data-inputmask='"mask": "<?= SystemConfig::getValue('sPhoneFormatCell') ?>"' data-mask>
-                        <br><input type="checkbox" name="NoFormat_CellPhone"
+                               maxlength="30" class="form-control">
+                               <!-- data-inputmask='"mask": "<?= SystemConfig::getValue('sPhoneFormatCell') ?>"' data-mask> -->
+                        <!-- <br><input type="checkbox" name="NoFormat_CellPhone"
                                    value="1" <?php if ($bNoFormat_CellPhone) {
                                         echo ' checked';
-                                             } ?>><?= gettext('Do not auto-format') ?>
+                                             } ?>><?= gettext('Do not auto-format') ?> -->
                     </div>
                 </div>
             </div>
             <p />
+            <div class="row">
+                <?php
+                $customFieldKey = 'c17';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-12">
+                                    <label><?= gettext('Region') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+            </div>
+            <!-- <p />
             <div class="row">
                 <div class="form-group col-md-4">
                     <label for="Email">
@@ -1120,7 +1307,7 @@ require_once 'Include/Header.php';
                         } ?>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="card card-info clearfix">
@@ -1132,23 +1319,52 @@ require_once 'Include/Header.php';
         </div><!-- /.box-header -->
         <div class="card-body">
             <div class="row">
-                <div class="form-group col-md-3 col-lg-3">
-                    <label for="Classification"><?= gettext('Classification') ?>:</label>
-                    <select id="Classification" name="Classification" class="form-control">
-                        <option value="0"><?= gettext('Unassigned') ?></option>
-                        <option value="" disabled>-----------------------</option>
-                        <?php while ($aRow = mysqli_fetch_array($rsClassifications)) {
-                            extract($aRow);
-                            echo '<option value="' . $lst_OptionID . '"';
-                            if ($iClassification == $lst_OptionID) {
-                                echo ' selected';
+                <?php
+                $customFieldKey = 'c1';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-6">
+                                    <label><?= gettext('Member Number') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
                             }
-                            echo '>' . $lst_OptionName . '&nbsp;';
+                            break; 
                         }
-                        ?>
-                    </select>
-                </div>
-                <div class="form-group col-md-3 col-lg-3">
+                    }
+                }
+                ?>
+                <div class="form-group col-md-6 col-lg-6">
                     <label><?= gettext('Membership Date') ?>:</label>
                     <div class="input-group">
                         <div class="input-group-addon">
@@ -1183,9 +1399,621 @@ require_once 'Include/Header.php';
                     <?php
                 } ?>
             </div>
+            <p />
+            <div class="row">
+                <div class="form-group col-md-3 col-lg-3">
+                    <label for="Classification"><?= gettext('Classification') ?>:</label>
+                    <select id="Classification" name="Classification" class="form-control">
+                        <option value="0"><?= gettext('Unassigned') ?></option>
+                        <option value="" disabled>-----------------------</option>
+                        <?php while ($aRow = mysqli_fetch_array($rsClassifications)) {
+                            extract($aRow);
+                            echo '<option value="' . $lst_OptionID . '"';
+                            if ($iClassification == $lst_OptionID) {
+                                echo ' selected';
+                            }
+                            echo '>' . $lst_OptionName . '&nbsp;';
+                        }
+                        ?>
+                    </select>
+                </div>
+                <?php
+                $customFieldKey = 'c8';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-3">
+                                    <label><?= gettext('Transfer In Date') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+                <?php
+                $customFieldKey = 'c9';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-3">
+                                    <label><?= gettext('Transfer Out Date') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+                <?php
+                $customFieldKey = 'c10';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-3">
+                                    <label><?= gettext('Date of Death') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+            </div>
+            <div class="row">
+                <?php
+                $customFieldKey = 'c2';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-4">
+                                    <label><?= gettext('Membership Status') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+                <?php
+                $customFieldKey = 'c6';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-4">
+                                    <label><?= gettext('Baptism Date') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+                <?php
+                $customFieldKey = 'c7';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-4">
+                                    <label><?= gettext('Confirmation Date') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+            </div>
+            <p />
+            <div class="row">
+                <?php
+                $customFieldKey = 'c11';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-4">
+                                    <label><?= gettext('DKH Date') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+                <?php
+                $customFieldKey = 'c12';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-4">
+                                    <label><?= gettext('Ex. DKH Date') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+                <?php
+                $customFieldKey = 'c13';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-4">
+                                    <label><?= gettext('Ex. DKH-4 Date') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+            </div>
+            <div class="row">
+                <?php
+                $customFieldKey = 'c14';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-4">
+                                    <label><?= gettext('Reason for Mutation-1') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+                <?php
+                $customFieldKey = 'c15';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-4">
+                                    <label><?= gettext('Reason for Mutation-2') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+                <?php
+                $customFieldKey = 'c16';
+
+                if ($numCustomFields > 0) {
+                    mysqli_data_seek($rsCustomFields, 0);
+
+                    while ($rowCustomField = mysqli_fetch_array($rsCustomFields, MYSQLI_BOTH)) {
+                        if ($rowCustomField['custom_Field'] === $customFieldKey) {
+                            extract($rowCustomField);
+
+                            if (AuthenticationManager::getCurrentUser()->isEnabledSecurity($aSecurityType[$custom_FieldSec])) {
+                                ?>
+                                <div class="form-group col-md-4">
+                                    <label><?= gettext('Reason for Mutation-3') ?></label>
+                                    <?php
+                                    if (array_key_exists($custom_Field, $aCustomData)) {
+                                        $currentFieldData = trim($aCustomData[$custom_Field]);
+                                    } else {
+                                        $currentFieldData = '';
+                                    }
+
+                                    if ($type_ID == 11) {
+                                        $custom_Special = $sPhoneCountry;
+                                    }
+
+                                    formCustomField(
+                                        $type_ID,
+                                        $custom_Field,
+                                        $currentFieldData,
+                                        $custom_Special ?? null,
+                                        !isset($_POST['PersonSubmit'])
+                                    );
+
+                                    if (isset($aCustomErrors[$custom_Field])) {
+                                        echo '<span style="color: red;">' . $aCustomErrors[$custom_Field] . '</span>';
+                                    }
+                                    ?>
+                                </div>
+                                <?php
+                            }
+                            break;
+                        }
+                    }
+                }
+                ?>
+            </div>
         </div>
     </div>
-    <?php if ($numCustomFields > 0) {
+    <div class="card card-info clearfix">
+        <div class="card-header">
+            <h3 class="card-title"><?= gettext('Family Info') ?></h3>
+            <div class="card-tools">
+                <input type="submit" class="btn btn-primary" value="<?= gettext('Save') ?>" name="PersonSubmit">
+            </div>
+        </div><!-- /.box-header -->
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <label><?= gettext('Family Role') ?>:</label>
+                    <select name="FamilyRole" class="form-control">
+                        <option value="0"><?= gettext('Unassigned') ?></option>
+                        <option value="" disabled>-----------------------</option>
+                        <?php while ($aRow = mysqli_fetch_array($rsFamilyRoles)) {
+                            extract($aRow);
+                            echo '<option value="' . $lst_OptionID . '"';
+                            if ($iFamilyRole == $lst_OptionID) {
+                                echo ' selected';
+                            }
+                            echo '>' . $lst_OptionName . '&nbsp;';
+                        } ?>
+                    </select>
+                </div>
+
+                <div class="col-md-8">
+                    <label for="familyId"><?= gettext('Family'); ?>:</label>
+                    <select name="Family" id="familyId" class="form-control">
+                        <option value="0" selected><?= gettext('Unassigned') ?></option>
+                        <option value="-1"><?= gettext('Create a new family (using last name)') ?></option>
+                        <option value="" disabled>-----------------------</option>
+                        <?php while ($aRow = mysqli_fetch_array($rsFamilies)) {
+                            extract($aRow);
+                            $fam_ID = (int)$fam_ID;
+
+                            echo '<option value="' . $fam_ID . '"';
+                            if ($iFamily === $fam_ID || $queryParamFamilyId === $fam_ID) {
+                                echo ' selected';
+                            }
+                            echo '>' . $fam_Name . '&nbsp;' . FormatAddressLine($fam_Address1, $fam_City, $fam_State);
+                        } ?>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <?php if ($numCustomFields > 18) {
         ?>
         <div class="card card-info clearfix">
             <div class="card-header">
