@@ -1,6 +1,17 @@
 # 📋 Changelog – GKI Raya Hankam DBMS (beta)
 _Berdasarkan ChurchCRM v5.17.0_
 
+## 🔖 v0.3 - 19 Juli 2025
+
+### ⚙️ Auto Assign Anggota
+- Membagi Kelompok Usia ke dalam 8 kategori: **Anak** (0-15 tahun), **Pra Remaja** (13-15 tahun), **Remaja** (16-19 tahun), **Pemuda** (20-30 tahun), **Dewasa Muda** (31-39 tahun), **Dewasa Madya** (40-49 tahun), **Dewasa Senior** (50-59 tahun), dan **Lansia** (>60 tahun)
+- Menambahkan fungsi untuk memasukkan anggota ke masing-masing kelompok usia
+
+### 🔧 Minor Adjustment pada Tampilan Login
+- Menambahkan opsi **Show Password** pada form login
+
+---
+
 ## 🔖 v0.2.1 – 12 Juli 2025
 
 ### 🗺️ Tampilan Dashboard

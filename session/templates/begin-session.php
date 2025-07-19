@@ -51,6 +51,10 @@ require SystemURLs::getDocumentRoot() . '/Include/HeaderNotLoggedIn.php';
                             </div>
                         </div>
                     </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="showPasswordToggle" onclick="togglePasswordVisibility()">
+                        <label class="form-check-label" for="showPasswordToggle"><strong>Show Password</strong></label>
+                    </div>
                     <div class="row">
                         <div class="col-8">
                             <div class="icheck-primary">
@@ -86,5 +90,16 @@ require SystemURLs::getDocumentRoot() . '/Include/HeaderNotLoggedIn.php';
     </div>
     <!-- /.login-box -->
 </div>
+<script>
+function togglePasswordVisibility() {
+    const passwordInput = document.getElementById('PasswordBox');
+    const toggle = document.getElementById('showPasswordToggle');
+    if (toggle.checked) {
+        passwordInput.type = 'text';
+    } else {
+        passwordInput.type = 'password';
+    }
+}
+</script>
 <?php
 require SystemURLs::getDocumentRoot() . '/Include/FooterNotLoggedIn.php';

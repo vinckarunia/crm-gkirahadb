@@ -189,4 +189,40 @@ $(document).ready(function () {
             );
         });
     });
+
+    $("#table-filter").on("change", function () {
+        const selected = $(this).val().toLowerCase().trim();
+        if (selected === "kelompok usia") {
+            $("#assignAgeGroupWrapper").show();
+        } else {
+            $("#assignAgeGroupWrapper").hide();
+        }
+    });
+
+    $("#assignAgeGroupsBtn").on("click", function () {
+        if (confirm("Assign group members?")) {
+            const $btn = $(this);
+            $btn.prop("disabled", true).text("Processing...");
+
+            $.ajax({
+                url: "autoAssignGroups.php",
+                method: "GET",
+                dataType: "json",
+                success: function (response) {
+                    if (response.success) {
+                        alert("Successfully assigned " + response.assigned + " members to groups.");
+                        location.reload();
+                    } else {
+                        alert("Failed: " + response.error);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert("An error occurred while contacting the server: " + error);
+                },
+                complete: function () {
+                    $btn.prop("disabled", false).text("Auto Assign Group Members");
+                }
+            });
+        }
+    });
 });

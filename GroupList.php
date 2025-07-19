@@ -27,6 +27,11 @@ foreach ($rsGroupTypes as $groupType) {
 } ?>
 </select>
 </label>
+<div id="assignAgeGroupWrapper" style="display:none;" class="mt-3 text-end">
+    <button id="assignAgeGroupsBtn" class="btn btn-primary">
+        <?= gettext('Auto Assign Group Members') ?>
+    </button>
+</div>
 </p>
 
 <div class="card card-body">
