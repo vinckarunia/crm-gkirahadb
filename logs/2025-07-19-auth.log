@@ -1,0 +1,2 @@
+[2025-07-19T04:23:09.879290+00:00] authLogger.WARNING: Invalid login attempt {"username":"admin"} {"url":"/session/begin","remote_ip":"127.0.0.1","correlation_id":"687b1dadd6ac4","context":{"ContextClass":"ChurchCRM\\Authentication\\AuthenticationManager","ContextMethod":"authenticate"}}
+[2025-07-19T07:18:38.538807+00:00] authLogger.INFO: Ended Local session for user {"username":"Church Admin"} {"url":"/session/end","remote_ip":"127.0.0.1","correlation_id":"687b46ce838c6","context":{"ContextClass":"","ContextMethod":"endSession"}}
