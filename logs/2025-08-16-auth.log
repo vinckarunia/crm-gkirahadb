@@ -1,0 +1,1 @@
+[2025-08-16T09:50:20.700071+00:00] authLogger.INFO: Ended Local session for user {"username":" Administrator"} {"url":"/churchcrm/session/end","remote_ip":"182.253.177.45","correlation_id":"68a0545caaead","context":{"ContextClass":"","ContextMethod":"endSession"}}

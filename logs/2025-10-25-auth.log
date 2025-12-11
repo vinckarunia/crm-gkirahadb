@@ -1,0 +1,1 @@
+[2025-10-25T23:46:02.052434+00:00] authLogger.WARNING: Invalid login attempt {"username":"admin"} {"url":"/session/begin","remote_ip":"127.0.0.1","correlation_id":"68fd613a0d10d","context":{"ContextClass":"ChurchCRM\\Authentication\\AuthenticationManager","ContextMethod":"authenticate"}}

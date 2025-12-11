@@ -1,0 +1,30 @@
+[05-Oct-2025 12:02:11 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'evctnm_countname' at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/EditEventTypes.php(29): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[05-Oct-2025 12:02:29 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'evctnm_countname' at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/EditEventTypes.php(29): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[05-Oct-2025 12:03:25 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'evctnm_countname' at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/EventNames.php(71): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[05-Oct-2025 12:04:23 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'evctnm_countname' at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/EditEventTypes.php(29): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[05-Oct-2025 12:53:36 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'evtcnt_notes' at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/EventEditor.php(343): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175

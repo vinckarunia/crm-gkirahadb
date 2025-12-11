@@ -1,0 +1,39 @@
+[13-Jul-2025 20:57:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "ChurchCRM\PersonQuery" not found in /home/vinc/crm-gkirahadb/autoAssignGroups.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/crm-gkirahadb/autoAssignGroups.php on line 43
+[13-Jul-2025 20:58:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "ChurchCRM\PersonQuery" not found in /home/vinc/crm-gkirahadb/autoAssignGroups.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/crm-gkirahadb/autoAssignGroups.php on line 43
+[13-Jul-2025 20:59:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "ChurchCRM\PersonQuery" not found in /home/vinc/crm-gkirahadb/autoAssignGroups.php:48
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/crm-gkirahadb/autoAssignGroups.php on line 48
+[13-Jul-2025 21:01:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "ChurchCRM\PersonQuery" not found in /home/vinc/crm-gkirahadb/autoAssignGroups.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/crm-gkirahadb/autoAssignGroups.php on line 45
+[13-Jul-2025 21:02:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "model\ChurchCRM\PersonQuery" not found in /home/vinc/crm-gkirahadb/autoAssignGroups.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/crm-gkirahadb/autoAssignGroups.php on line 45
+[13-Jul-2025 21:02:52 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\BadMethodCallException: Call to undefined method: getDateOfBirth. in /home/vinc/crm-gkirahadb/ChurchCRM/model/ChurchCRM/Base/Person.php:6070
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/autoAssignGroups.php(50): ChurchCRM\model\ChurchCRM\Base\Person->__call()
+#1 {main}
+  thrown in /home/vinc/crm-gkirahadb/ChurchCRM/model/ChurchCRM/Base/Person.php on line 6070
+[13-Jul-2025 21:05:10 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\BadMethodCallException: Call to undefined method: getDateOfBirth. in /home/vinc/crm-gkirahadb/ChurchCRM/model/ChurchCRM/Base/Person.php:6070
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/autoAssignGroups.php(51): ChurchCRM\model\ChurchCRM\Base\Person->__call()
+#1 {main}
+  thrown in /home/vinc/crm-gkirahadb/ChurchCRM/model/ChurchCRM/Base/Person.php on line 6070
+[13-Jul-2025 21:08:56 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\BadMethodCallException: Call to undefined method: get. in /home/vinc/crm-gkirahadb/ChurchCRM/model/ChurchCRM/Base/Person.php:6070
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/autoAssignGroups.php(52): ChurchCRM\model\ChurchCRM\Base\Person->__call()
+#1 {main}
+  thrown in /home/vinc/crm-gkirahadb/ChurchCRM/model/ChurchCRM/Base/Person.php on line 6070
+[13-Jul-2025 21:10:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class "ChurchCRM\model\ChurchCRM\Person2group2roleQuery" not found in /home/vinc/crm-gkirahadb/autoAssignGroups.php:86
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/crm-gkirahadb/autoAssignGroups.php on line 86

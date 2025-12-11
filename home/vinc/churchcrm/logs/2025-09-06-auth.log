@@ -1,0 +1,1 @@
+[2025-09-06T11:02:52.269616+00:00] authLogger.INFO: Ended Local session for user {"username":"Arie Theobald Papilaya"} {"url":"/churchcrm/session/end","remote_ip":"182.253.179.50","correlation_id":"68bc14dc41d35","context":{"ContextClass":"","ContextMethod":"endSession"}}

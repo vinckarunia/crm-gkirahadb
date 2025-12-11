@@ -1,0 +1,130 @@
+[21-Jun-2025 11:56:06 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column '0ahir' in 'VALUES' in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(561): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 12:02:09 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: 'December 24, 1989' for column `gkirahachurchcrm`.`person_custom`.`c7` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 12:48:08 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: 'December 24, 1989' for column `gkirahachurchcrm`.`person_custom`.`c7` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 12:56:52 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: 'December 24, 1989' for column `gkirahachurchcrm`.`person_custom`.`c7` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 13:01:51 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'gkirahachurchcrm.users' doesn't exist in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/test.php:12
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/test.php(12): mysqli_query()
+#1 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/test.php on line 12
+[21-Jun-2025 13:37:08 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property ChurchCRM\Family::$Phone of type string in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php:74
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(775): ChurchCRM\Family->assignRoles()
+#1 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php on line 74
+[21-Jun-2025 13:40:02 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `gkirahachurchcrm`.`person_custom`.`c1` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 13:45:43 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `gkirahachurchcrm`.`person_custom`.`c1` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 14:03:08 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `gkirahachurchcrm`.`person_custom`.`c1` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 14:35:06 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `gkirahachurchcrm`.`person_custom`.`c1` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 15:50:01 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: 'No. Anggota' for column `gkirahachurchcrm`.`person_custom`.`c1` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 15:58:37 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `gkirahachurchcrm`.`person_custom`.`c1` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 16:03:43 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'per_CellPhone' at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(561): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 18:39:23 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'c.ddress_only' in 'WHERE' in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(694): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 20:04:58 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: 'Jatikramat, Jatimekar, Jatirasa dsk' for column `gkirahachurchcrm`.`person_custom`.`c17` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(925): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 20:31:56 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' per_FirstName, per_MiddleName, per_LastName, , per_Gender, , , , , , per_Bir...' at line 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(670): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 21:02:23 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' per_FirstName, per_MiddleName, per_LastName, , per_Gender, , , , , , per_Bir...' at line 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(670): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 21:05:52 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'per_CellPhone' at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(561): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 21:11:54 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Data too long for column 'per_CellPhone' at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(561): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 21:25:46 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '21-08-1983' for column `gkirahachurchcrm`.`person_custom`.`c6` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 21:42:37 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '21-08-1983' for column `gkirahachurchcrm`.`person_custom`.`c6` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175
+[21-Jun-2025 21:50:16 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: ''0121.047' for column `gkirahachurchcrm`.`person_custom`.`c1` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/CSVImport.php(757): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175

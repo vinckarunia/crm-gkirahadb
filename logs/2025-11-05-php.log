@@ -1,0 +1,43 @@
+[05-Nov-2025 09:03:17 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\BadMethodCallException: Call to undefined method: getPerQR. in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php:6070
+Stack trace:
+#0 /home/vinc/churchcrm/PersonView.php(890): ChurchCRM\model\ChurchCRM\Base\Person->__call()
+#1 {main}
+  thrown in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php on line 6070
+[05-Nov-2025 09:04:43 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\BadMethodCallException: Call to undefined method: getPerQR. in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php:6070
+Stack trace:
+#0 /home/vinc/churchcrm/PersonView.php(886): ChurchCRM\model\ChurchCRM\Base\Person->__call()
+#1 {main}
+  thrown in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php on line 6070
+[05-Nov-2025 09:05:03 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\BadMethodCallException: Call to undefined method: getPerQR. in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php:6070
+Stack trace:
+#0 /home/vinc/churchcrm/PersonView.php(886): ChurchCRM\model\ChurchCRM\Base\Person->__call()
+#1 {main}
+  thrown in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php on line 6070
+[05-Nov-2025 09:05:27 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\BadMethodCallException: Call to undefined method: getPerQR. in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php:6070
+Stack trace:
+#0 /home/vinc/churchcrm/PersonView.php(886): ChurchCRM\model\ChurchCRM\Base\Person->__call()
+#1 {main}
+  thrown in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php on line 6070
+[05-Nov-2025 09:07:01 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\PropelException: Cannot get value of inexistent virtual column per_QR. in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php:653
+Stack trace:
+#0 /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Person.php(742): ChurchCRM\model\ChurchCRM\Base\Person->getVirtualColumn()
+#1 /home/vinc/churchcrm/PersonView.php(886): ChurchCRM\model\ChurchCRM\Person->getQR()
+#2 {main}
+  thrown in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php on line 653
+[05-Nov-2025 09:11:18 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\PropelException: Cannot get value of inexistent virtual column per_QR. in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php:653
+Stack trace:
+#0 /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Person.php(742): ChurchCRM\model\ChurchCRM\Base\Person->getVirtualColumn()
+#1 /home/vinc/churchcrm/PersonView.php(886): ChurchCRM\model\ChurchCRM\Person->getQR()
+#2 {main}
+  thrown in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php on line 653
+[05-Nov-2025 09:15:40 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\PropelException: Cannot get value of inexistent virtual column per_QR. in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php:653
+Stack trace:
+#0 /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Person.php(742): ChurchCRM\model\ChurchCRM\Base\Person->getVirtualColumn()
+#1 /home/vinc/churchcrm/PersonView.php(892): ChurchCRM\model\ChurchCRM\Person->getQR()
+#2 {main}
+  thrown in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php on line 653
+[05-Nov-2025 11:28:37 Asia/Jakarta] PHP Fatal error:  Uncaught Propel\Runtime\Exception\BadMethodCallException: Call to undefined method: getQR. in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php:6070
+Stack trace:
+#0 /home/vinc/churchcrm/PersonView.php(891): ChurchCRM\model\ChurchCRM\Base\Person->__call()
+#1 {main}
+  thrown in /home/vinc/churchcrm/ChurchCRM/model/ChurchCRM/Base/Person.php on line 6070

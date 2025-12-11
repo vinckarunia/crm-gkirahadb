@@ -1,0 +1,12 @@
+[29-May-2025 18:50:58 America/New_York] PHP Fatal error:  Uncaught Slim\Exception\HttpNotFoundException: Not found. in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/vendor/slim/slim/Slim/Middleware/RoutingMiddleware.php:76
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/vendor/slim/slim/Slim/Middleware/RoutingMiddleware.php(44): Slim\Middleware\RoutingMiddleware->performRouting()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/vendor/slim/slim/Slim/MiddlewareDispatcher.php(129): Slim\Middleware\RoutingMiddleware->process()
+#2 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/ChurchCRM/Slim/Middleware/VersionMiddleware.php(14): Psr\Http\Server\RequestHandlerInterface@anonymous->handle()
+#3 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/vendor/slim/slim/Slim/MiddlewareDispatcher.php(280): ChurchCRM\Slim\Middleware\VersionMiddleware->__invoke()
+#4 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/vendor/slim/slim/Slim/MiddlewareDispatcher.php(73): Psr\Http\Server\RequestHandlerInterface@anonymous->handle()
+#5 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/vendor/slim/slim/Slim/App.php(209): Slim\MiddlewareDispatcher->handle()
+#6 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/vendor/slim/slim/Slim/App.php(193): Slim\App->handle()
+#7 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/session/index.php(91): Slim\App->run()
+#8 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/vendor/slim/slim/Slim/Middleware/RoutingMiddleware.php on line 76

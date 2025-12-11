@@ -1,0 +1,2 @@
+[2025-09-20T12:21:28.066496+00:00] authLogger.INFO: Ended Local session for user {"username":"Arie Theobald Papilaya"} {"url":"/churchcrm/session/end","remote_ip":"118.99.75.74","correlation_id":"68ce9c48103c6","context":{"ContextClass":"","ContextMethod":"endSession"}}
+[2025-09-20T12:21:52.254733+00:00] authLogger.INFO: Ended Local session for user {"username":"Arie Theobald Papilaya"} {"url":"/churchcrm/session/end","remote_ip":"118.99.75.74","correlation_id":"68ce9c603e313","context":{"ContextClass":"","ContextMethod":"endSession"}}

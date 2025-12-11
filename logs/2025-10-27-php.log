@@ -1,0 +1,40 @@
+[27-Oct-2025 15:32:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/Checkin.php:215
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/Checkin.php on line 215
+[27-Oct-2025 15:32:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/Checkin.php:215
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/Checkin.php on line 215
+[27-Oct-2025 15:46:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/Checkin.php:225
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/Checkin.php on line 225
+[27-Oct-2025 15:47:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/Checkin.php:222
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/Checkin.php on line 222
+[27-Oct-2025 15:48:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/Checkin.php:222
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/Checkin.php on line 222
+[27-Oct-2025 15:48:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/Checkin.php:227
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/Checkin.php on line 227
+[27-Oct-2025 16:03:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/Checkin.php:215
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/Checkin.php on line 215
+[27-Oct-2025 16:08:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/Checkin.php:207
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/Checkin.php on line 207
+[27-Oct-2025 16:09:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/Checkin.php:210
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/Checkin.php on line 210
+[27-Oct-2025 16:17:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to a member function delete() on null in /home/vinc/churchcrm/QRCheckin.php:216
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/churchcrm/QRCheckin.php on line 216

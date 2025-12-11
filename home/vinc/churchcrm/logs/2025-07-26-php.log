@@ -1,0 +1,30 @@
+[26-Jul-2025 22:19:46 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: ChurchCRM\data\Countries::getCountryByName(): Argument #1 ($CountryName) must be of type string, null given, called in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/StateDropDown.php on line 14 and defined in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/ChurchCRM/data/Countries.php:297
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/StateDropDown.php(14): ChurchCRM\data\Countries::getCountryByName()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonEditor.php(1029): require_once('...')
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/ChurchCRM/data/Countries.php on line 297
+[26-Jul-2025 22:20:12 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: ChurchCRM\data\Countries::getCountryByName(): Argument #1 ($CountryName) must be of type string, null given, called in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/StateDropDown.php on line 14 and defined in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/ChurchCRM/data/Countries.php:297
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/StateDropDown.php(14): ChurchCRM\data\Countries::getCountryByName()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonEditor.php(1029): require_once('...')
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/ChurchCRM/data/Countries.php on line 297
+[26-Jul-2025 22:23:51 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: ChurchCRM\data\Countries::getCountryByName(): Argument #1 ($CountryName) must be of type string, null given, called in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/StateDropDown.php on line 14 and defined in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/ChurchCRM/data/Countries.php:297
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/StateDropDown.php(14): ChurchCRM\data\Countries::getCountryByName()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonEditor.php(1029): require_once('...')
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/ChurchCRM/data/Countries.php on line 297
+[26-Jul-2025 22:25:06 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: ChurchCRM\data\Countries::getCountryByName(): Argument #1 ($CountryName) must be of type string, null given, called in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/StateDropDown.php on line 14 and defined in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/ChurchCRM/data/Countries.php:297
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/StateDropDown.php(14): ChurchCRM\data\Countries::getCountryByName()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonEditor.php(1029): require_once('...')
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/ChurchCRM/data/Countries.php on line 297
+[26-Jul-2025 22:25:18 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column `gkirahachurchcrm`.`person_custom`.`c1` at row 1 in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php:175
+Stack trace:
+#0 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php(175): mysqli_query()
+#1 /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/PersonEditor.php(491): RunQuery()
+#2 {main}
+  thrown in /home/gkirahadb/htdocs/gkirahadb.my.id/public/churchcrm/Include/Functions.php on line 175

@@ -1,0 +1,38 @@
+[02-Jul-2025 11:12:54 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, null given in /home/vinc/crm-gkirahadb/PersonEditor.php:673
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/PersonEditor.php(673): mysqli_fetch_array()
+#1 {main}
+  thrown in /home/vinc/crm-gkirahadb/PersonEditor.php on line 673
+[02-Jul-2025 11:15:57 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, null given in /home/vinc/crm-gkirahadb/PersonEditor.php:651
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/PersonEditor.php(651): mysqli_fetch_array()
+#1 {main}
+  thrown in /home/vinc/crm-gkirahadb/PersonEditor.php on line 651
+[02-Jul-2025 11:16:39 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, null given in /home/vinc/crm-gkirahadb/PersonEditor.php:673
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/PersonEditor.php(673): mysqli_fetch_array()
+#1 {main}
+  thrown in /home/vinc/crm-gkirahadb/PersonEditor.php on line 673
+[02-Jul-2025 11:17:26 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: mysqli_fetch_array(): Argument #1 ($result) must be of type mysqli_result, null given in /home/vinc/crm-gkirahadb/PersonEditor.php:673
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/PersonEditor.php(673): mysqli_fetch_array()
+#1 {main}
+  thrown in /home/vinc/crm-gkirahadb/PersonEditor.php on line 673
+[02-Jul-2025 11:21:54 Asia/Jakarta] PHP Fatal error:  Uncaught TypeError: ChurchCRM\data\Countries::getCountryByName(): Argument #1 ($CountryName) must be of type string, null given, called in /home/vinc/crm-gkirahadb/Include/StateDropDown.php on line 14 and defined in /home/vinc/crm-gkirahadb/ChurchCRM/data/Countries.php:297
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/Include/StateDropDown.php(14): ChurchCRM\data\Countries::getCountryByName()
+#1 /home/vinc/crm-gkirahadb/PersonEditor.php(934): require_once('...')
+#2 {main}
+  thrown in /home/vinc/crm-gkirahadb/ChurchCRM/data/Countries.php on line 297
+[02-Jul-2025 11:22:12 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect integer value: '' for column 'c18' at row 1 in /home/vinc/crm-gkirahadb/Include/Functions.php:175
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/Include/Functions.php(175): mysqli_query()
+#1 /home/vinc/crm-gkirahadb/PersonEditor.php(510): RunQuery()
+#2 {main}
+  thrown in /home/vinc/crm-gkirahadb/Include/Functions.php on line 175
+[02-Jul-2025 21:33:24 Asia/Jakarta] PHP Fatal error:  Uncaught mysqli_sql_exception: Incorrect date value: '1900-01-00' for column 'c6' at row 1 in /home/vinc/crm-gkirahadb/Include/Functions.php:175
+Stack trace:
+#0 /home/vinc/crm-gkirahadb/Include/Functions.php(175): mysqli_query()
+#1 /home/vinc/crm-gkirahadb/CSVImport.php(876): RunQuery()
+#2 {main}
+  thrown in /home/vinc/crm-gkirahadb/Include/Functions.php on line 175

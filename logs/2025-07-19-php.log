@@ -1,0 +1,8 @@
+[19-Jul-2025 10:24:59 Asia/Jakarta] PHP Fatal error:  Cannot redeclare requireUserGroupMembership() (previously declared in /home/vinc/crm-gkirahadb/autoAssignGroups.php:17) in /home/vinc/crm-gkirahadb/Include/Functions.php on line 1577
+[19-Jul-2025 10:25:16 Asia/Jakarta] PHP Fatal error:  Cannot redeclare requireUserGroupMembership() (previously declared in /home/vinc/crm-gkirahadb/autoAssignGroups.php:17) in /home/vinc/crm-gkirahadb/Include/Functions.php on line 1577
+[19-Jul-2025 10:26:06 Asia/Jakarta] PHP Fatal error:  Cannot redeclare requireUserGroupMembership() (previously declared in /home/vinc/crm-gkirahadb/autoAssignGroups.php:17) in /home/vinc/crm-gkirahadb/Include/Functions.php on line 1577
+[19-Jul-2025 10:28:08 Asia/Jakarta] PHP Fatal error:  Cannot redeclare requireUserGroupMembership() (previously declared in /home/vinc/crm-gkirahadb/autoAssignGroups.php:17) in /home/vinc/crm-gkirahadb/Include/Functions.php on line 1577
+[19-Jul-2025 12:11:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Failed opening required 'Include/Header.php' (include_path='.:/usr/share/php') in /home/vinc/crm-gkirahadb/CustomPages/autoAssignGroups.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/vinc/crm-gkirahadb/CustomPages/autoAssignGroups.php on line 13
